@@ -1,0 +1,11 @@
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div>

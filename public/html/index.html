@@ -1,0 +1,883 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goiás E.C.</title>
+<link href="../css/custom.css" rel="stylesheet"/>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile.structure-1.0.min.css" rel="stylesheet"/>
+<link href="../css/main.css" rel="stylesheet" type="text/css"/>
+<script src="../js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="../js/jquery.mobile-1.0rc1.min.js" type="text/javascript"></script>
+<style type="text/css">
+	.botao{ -webkit-border-radius: 0.5em ;border-radius: 0.5em; font-size:24px; }
+	.botao .ui-btn-corner-all{ -webkit-border-radius: 0.5em ;border-radius: 0.5em; }
+	.botao .ui-btn-text{ margin-right: 10px}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="inicio">
+    <div data-role="content">						
+         <div style="width:250px;margin:0px auto;"><img width="250" src="../img/logo-home.png"/></div>
+         <div style="position: absolute; top: 70%; left: 35%; margin-top: -1.2em; margin-left: -1.2em;">
+         	<a href="#home" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right" class="botao">Entrar</a>
+         </div>            
+	</div>
+</div>
+
+<div data-role="page" id="home" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">mobile</h2>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#oclube">O Clube</a></li>
+            <li><a href="#campeonatos">Campeonatos</a></li>
+			<li><a href="#jogadores">Jogadores</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#musa">Musa</a></li>
+		</ul>		
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="oclube" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">O CLUBE</h2>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#historico">Histórico</a></li>
+            <li><a href="#diretoria">Diretoria</a></li>
+			<li><a href="#estrutura">Estrutura Física</a></li>
+            <li><a href="#categorias">Categorias de Base</a></li>
+		</ul>		
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="historico" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">HISTÓRICO</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		Goiás Esporte Clube é uma agremiação esportiva brasileira do estado de Goiás, com sede na cidade de Goiânia, fundado em 1943. 			Tem como principal rival o Vila Nova, e ainda uma rivalidade mais leve com o Atlético Goianiense.
+<br/><br/>
+Possui a maior torcida de Goiânia, do estado de Goiás (dentre todos os clubes brasileiros), e a quarta maior do Centro-Oeste brasileiro (atrás apenas do Flamengo, Corinthians e São Paulo) conforme pesquisa realizada pelo Instituto Ibope.
+<br/><br/>
+O Goiás foi o primeiro time goiano à disputar o Campeonato Brasileiro da Série A, e o primeiro e único à disputar uma Copa Libertadores da América e uma Copa Sul-Americana; representando todo o pioneirismo do futebol goiano no cenário futebolístico nacional. O primeiro e único time da região a chegar numa final de Copa do Brasil e Copa Sul-Americana.
+<br/><br/>
+Em seu estado, o esmeraldino é supremacia: Com 22 títulos goianos, o clube alviverde é o maior vencedor do campeonato de seu estado e mantém vantagem sobre todos os seus rivais. O Goiás também é detentor da maior glória do futebol goiano até hoje: O Campeonato Brasileiro da Série B conquistado pelo clube em 1999.
+        <ul data-role="listview" data-inset="true"> 
+        	<li>Nome<br/><span class="verde">Goiás Esporte Clube</span></li>
+			<li>Alcunhas<br/><span class="verde">Verdão/Esmeraldino</span></li>
+            <li>Torcedor/Adepto<br/><span class="verde">Esmeraldino/Goiás</span></li>
+            <li>Mascote<br/><span class="verde">Periquito</span></li>
+            <li>Fundação<br/><span class="verde">6 de abril de 1943 (68 anos)</span></li>
+            <li>Estádio<br/><span class="verde">Hailé Pinheiro (10.000 torcedores)</span></li>
+            <li>Localização<br/><span class="verde">Goiânia - GO, Brasil</span></li>
+            <li>Mando de jogo<br/><span class="verde">Serra Dourada (50.049 torcedores)</span></li>
+        </ul>	
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="diretoria" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">DIRETORIA</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<h2 class="t1">Conselho Deliberativo</h2>
+		
+        <ul data-role="listview" data-inset="true"> 
+    		<li>Presidente do Conselho Deliberativo:<br/><span class="verde"> Hailé Selassié de Goiás Pinheiro</span></li>
+    		<li>1º Vice-presidente do Conselho Deliberativo:<br/><span class="verde"> Gilberto Sebba</span></li>
+    		<li>2º Vice-presidente do Conselho Deliberativo:<br/><span class="verde"> Edson José Ferrari</span></li>
+       	</ul>
+
+		<h2 class="t1">Diretoria Executiva</h2>
+
+        <ul data-role="listview" data-inset="true"> 
+            <li>Diretor de Futebol:<br/><span class="verde"> Marco Antônio Figueiredo</span></li>
+            <li>Diretor Administrativo:<br/><span class="verde"> -</span></li>
+            <li>Superintendente Adm.:<br/><span class="verde"> Marcelo Nunes Segurado</span></li>
+            <li>Diretor Financeiro:<br/><span class="verde"> Quênio Ramos de Souza</span></li>
+            <li>Diretor de Marketing:<br/><span class="verde"> Paulo Augusto Siqueira de Pádua</span></li>
+            <li>Diretor de Esportes Amadores:<br/><span class="verde"> -</span></li>
+            <li>Diretor de Patrimônio:<br/><span class="verde"> Nabyh Salum</span></li>
+            <li>Diretor Social:<br/><span class="verde"> Aledino Montes</span></li>
+            <li>Superintendente Social:<br/><span class="verde"> Luis Alberto Bites</span></li>
+            <li>Diretor de Saúde:<br/><span class="verde"> Paulo Tadeu Machado</span></li>
+            <li>Diretor Odontológico:<br/><span class="verde"> Cassiano Rocha de Medeiros</span></li>
+            <li>Diretor de Esportes Olímpicos:<br/><span class="verde"> Antônio Marques Venâncio</span></li>
+            <li>Diretor Júrídico:<br/><span class="verde"> -</span></li>
+            <li>Diretor de Iniciação Esportiva:<br/><span class="verde"> Antônio Marques Venâncio</span></li>
+        </ul>
+
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="estrutura" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">ESTRUTURA</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		O Estádio de Hailé Pinheiro, também conhecido como Estádio da Serrinha, foi construído em 1995, é um estádio de futebol situado em 		        Goiânia, Brasil. É propriedade do Goiás Esporte Clube e possui uma capacidade para 6.403 pessoas, segundo o CNEF(Cadastro Nacional de        Estádios de Futebol) editado em 15/09/2009 pela CBF.
+        <br/><br/>
+        <img src="../img/estrutura-03.jpg" width="100%"/>
+        <br/><br/>
+        O Complexo de Serrinha, que inclui estádio homônimo, foi adquirido pelo Goiás Esporte Clube na década de 1960. Naquela altura, o terreno        era de propriedade municipal, onde anteriormente funcionava a Fazenda Macambira. Neste espaço foi montado o prédio administrativo do Goiás, campos de futebol, concentração e o Ginásio Luiz Torres de Abreu. Em 1995, foi construído o Estádio Hailé Pinheiro. Todo o        complexo foi modernizado em 2003 na direção de Raimundo Queiroz.
+        <br/><br/>
+        <img src="../img/estrutura-02.jpg" width="100%"/>
+        <br/><br/>
+        <h2>O complexo</h2>
+        <ul data-role="listview" data-inset="true"> 
+            <li>Estádio Hailé Pinheiro, com uma capacidade para 6.403 pessoas 10.000 torcedores</li>
+            <li>Ginásio coberto, com uma capacidade para 3.000 pessoas</li>
+            <li>Completa estrutura de concentração para os atletas</li>
+            <li>2 campos gramados de treinamento para alunos da Escolinha de Iniciação Esportiva</li>
+            <li>1 piscina de 25m semi-olímpica coberta e aquecida, para a Iniciação Esportiva</li>
+            <li>Estacionamento para 300 veículos</li>
+            <li>2 quadras de areia para vôlei e futvôlei iluminadas</li>
+            <li>Pista para cooper com 1 km</li>
+            <li>Área disponível para realização de festas</li>
+            <li>Loja Emporio Esmeraldino</li>
+            <li>Memorial Goiás</li>
+            <li>Restaurante</li>
+            <li>Departamento Médico</li>
+            <li>Rouparia</li>
+            <li>Lanchonete Spazio Verde</li>
+            <li>Sede administrativa</li>
+        </ul>
+
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="categorias" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CATEGORIAS DE BASE</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<ul data-role="listview">
+			<li><a href="#categoriasDados">Dados Gerais</a></li>
+            <li><a href="#categoriasMidia">Fotos e Vídeos</a></li>
+            <li><a href="#categoriasNoticias">Notícias</a></li>
+            <li><a href="#categoriasInscricao">Inscrição (Testes)</a></li>
+			<li><a href="#categoriasCampeonatos">Campeonatos</a></li>
+		</ul>
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="categoriasDados" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CATEGORIAS DE BASE</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<h2>Equipe</h2>
+        <ul data-role="listview" data-inset="true">
+			<li>HAILE PINHEIRO <br/><span class="verde">PRES. CONSELHO DELIBERATIVO E EXECUTIVO</span></li>
+            <li>VICENTE EMÍDIO<br/><span class="verde"> DIRETOR CATEGORIAS DE BASE</span></li>
+            <li>HELY MAIA<br/><span class="verde"> SUPERVISOR GERAL</span></li>
+            <li>DR. DALTON <br/><span class="verde">MÉDICO</span></li>
+            <li>MARCELO PUCCA <br/><span class="verde">FISIOTERAPEUTA</span></li>
+            <li>THIAGO MUSTAFA <br/><span class="verde">FISIOTERAPEUTA</span></li>
+            <li>FÁBIO MESQUITA <br/><span class="verde">FISIOTERAPEUTA</span></li>
+            <li>LETYCIA LOYANA <br/><span class="verde">PSICÓLOGA</span></li>
+            <li>GUARÁ <br/><span class="verde">OBSERVADOR TÉCNICO</span></li>
+		</ul>
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="categoriasMidia" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CATEGORIAS DE BASE</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<h1>Fotos</h1>
+        <img src="../img/base-01.jpg" width="100%"/>
+        <img src="../img/base-02.jpg" width="100%"/>
+        <ul data-role="listview" data-inset="true">
+         	<li><a href="#">mais fotos</a></li>
+        </ul>
+        <h2>Vídeos</h2>
+        <ul data-role="listview" data-inset="true">
+         	<li><a href="http://www.youtube.com/user/BASEGOIAS" target="_blank">Gols, treinos e edições</a></li>
+        </ul>   
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="categoriasNoticias" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CATEGORIAS DE BASE</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<h1>Notícias</h1>
+        
+        <ul data-role="listview">
+         	<li>SUB-16 INICIA O MATA-MATA DAS QUARTAS-DE-FINAIS HOJE 28/10 AS 16:30<br/><span class="verde">28/10/2011</span></li>
+            <li>SUB-18 VENCE OS DOIS CONFRONTOS COM O VILA E ESTA NA SEMI-FINAL <br/><span class="verde"> 26/10/2011</span></li>
+            <li>TABELAS DAS QUARTAS-DE-FINAIS DO SUB-16 <br/><span class="verde"> 25/10/2011</span></li>
+        </ul>
+          
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="categoriasCampeonatos" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CATEGORIAS DE BASE</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<h1>Campeonatos</h1>
+        
+        <ul data-role="listview">
+         	<li><a href="http://www.fgf.esp.br/tabelas.asp?id_campeonato=166" target="_blank">Goiano Sub-20</a></li>
+            <li><a href="http://www.fgf.esp.br/tabelas.asp?id_campeonato=167" target="_blank">Taça Mané Garrincha Sub-18</a></li>
+            <li><a href="http://www.fgf.esp.br/tabelas.asp?id_campeonato=168" target="_blank">Copa Goiás Sub-16</a></li>
+            <li><a href="http://www.fgf.esp.br/tabelas.asp?id_campeonato=169" target="_blank">Copa Goiás Sub-15</a></li>
+        </ul>
+          
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="categoriasInscricao" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CATEGORIAS DE BASE</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<h1>Inscrição e Testes</h1>
+        
+        <ul data-role="listview">
+         	<li><a href="../doc/categorias-regulamento.pdf" target="_blank">Regulamento</a></li>
+            <li><a href="../doc/categorias-normas-02.pdf" target="_blank">Ficha de Inscrição</a></li>
+            <li><a href="../doc/categorias-normas-01.pdf" target="_blank">Ficha de Normas</a></li>
+        </ul>
+          
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="campeonatos" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CAMPEONATOS</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+        <ul data-role="listview" data-inset="true">
+			<li><a href="#campeonatoGoiano">Goianão 2012</a></li>
+            <li><a href="#campeonatoBrasileiro">Brasileiro - Série B</a></li>            
+		</ul>                 
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="campeonatoGoiano" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">CAMPEONATO GOIANO 2012</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+        <ul data-role="listview" data-inset="true">
+        	<li data-role="list-divider">Goianão 2012</li>
+            <li><a href="#tabelaGoiano">Tabela de Classificação</a></li>
+            <li>
+            	<b>Próximos confrontos:</b><br/><br/><br/>
+                <p>
+                    <img src="../img/times/gremio_prudente_45x45.png" width="32" align="left" hspace="10"/>
+                    <b>Grêmio Prudente</b><br/>
+                    <span class="verde">Sex 28/10 às 20h30 - Serra Dourada</span><br/>
+                    1ª rodada
+                </p>
+                <br/>
+                <p>
+                    <img src="../img/times/vila_nova_45x45.png" width="32" align="left" hspace="10"/>
+                    <b>Vila Nova</b><br/>
+                    <span class="verde">Sex 04/11 às 20h30 - Serra Dourada</span><br/>
+                    2ª rodada
+                </p>
+            </li>
+            <li><a href="#jogosGoiano">Jogos Anteriores</a></li>
+            <li data-icon="arrow-u" data-iconpos="right">Classificação atual: 14º</li>
+        </ul>                 
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="tabelaGoiano" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Campeonato Goiano 2012</h1>
+        <h2 class="subtitulo">Tabela de Classificação</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+		<table width="100%" cellspacing="2" class="classificacao">
+        	<tr>
+            	<th colspan="2">Classificação</th>
+                <th>P</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>%</th>
+            </tr>
+            <tr class="impar">
+            	<td>1</td>
+                <td>Portuguesa</td>
+                <td>81</td>
+                <td>38</td>
+                <td>23</td>
+                <td>12</td>
+                <td>3</td>
+                <td>82</td>
+                <td>38</td>
+                <td>44</td>
+                <td>71</td>
+            </tr>
+        	<tr>
+            	<td>2</td>
+                <td>Náutico</td>	
+                <td>64</td>
+                <td>38</td>
+                <td>17</td>
+                <td>13</td>
+                <td>8</td>
+                <td>51</td>
+                <td>41</td>
+                <td>10</td>
+                <td>56.1</td>
+			</tr>
+        	<tr class="impar">
+                <td>3</td>
+                <td>Ponte Preta	</td>
+                <td>63</td>
+                <td>38</td>
+                <td>17</td>
+                <td>12</td>
+                <td>9</td>
+                <td>63</td>
+                <td>45</td>
+                <td>18</td>
+                <td>55.3</td>
+            </tr>
+            <tr>
+				<td>4</td>
+                <td>Sport	</td>
+                <td>61</td>
+                <td>38</td>
+                <td>17</td>
+                <td>10</td>
+                <td>11</td>
+                <td>62</td>
+                <td>44</td>
+                <td>18</td>
+                <td>53.5</td>
+            </tr>
+            <tr class="impar">
+                <td>5</td>
+                <td>Vitória	</td>
+                <td>60</td>
+                <td>38</td>
+                <td>17</td>
+                <td>9</td>
+                <td>12</td>
+                <td>61</td>
+                <td>48</td>
+                <td>13</td>
+                <td>52.6</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Bragantino	</td>
+                <td>58</td>
+                <td>38</td>
+                <td>16</td>
+                <td>10</td>
+                <td>12</td>
+                <td>65</td>
+                <td>53</td>
+                <td>12</td>
+                <td>50.9</td>
+            </tr>
+            <tr class="impar">
+                <td>7</td>
+                <td>Boa Esporte	</td>
+                <td>57</td>
+                <td>38</td>
+                <td>16</td>
+                <td>9</td>
+                <td>13</td>
+                <td>44</td>
+                <td>40</td>
+                <td>4</td>
+                <td>50</td>
+            </tr>
+                <td>8</td>
+                <td>Americana	</td>
+                <td>56</td>
+                <td>38</td>
+                <td>15</td>
+                <td>11</td>
+                <td>12</td>
+                <td>40</td>
+                <td>45</td>
+                <td>-5</td>
+                <td>49.1</td>
+            </tr>
+            <tr class="impar">
+                <td>9</td>
+                <td>Barueri	</td>
+                <td>53</td>
+                <td>38</td>
+                <td>15</td>
+                <td>8</td>
+                <td>15</td>
+                <td>48</td>
+                <td>53</td>
+                <td>-5</td>
+                <td>46.5</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>ABC	</td>
+                <td>53</td>
+                <td>38</td>
+                <td>13</td>
+                <td>14</td>
+                <td>11</td>
+                <td>52</td>
+                <td>53</td>
+                <td>-1</td>
+                <td>46.5</td>
+            </tr>
+            <tr class="impar">
+                <td>11</td>
+                <td>Goiás	</td>
+                <td>52</td>
+                <td>38</td>
+                <td>16</td>
+                <td>4</td>
+                <td>18</td>
+                <td>51</td>
+                <td>57</td>
+                <td>-6</td>
+                <td>45.6</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Guarani</td>	
+                <td>52</td>
+                <td>38</td>
+                <td>15</td>
+                <td>7</td>
+                <td>16</td>
+                <td>51</td>
+                <td>48</td>
+                <td>3</td>
+                <td>45.6</td>
+            </tr>
+            <tr class="impar">
+                <td>13</td>
+                <td>Paraná	</td>
+                <td>52</td>
+                <td>38</td>
+                <td>14</td>
+                <td>10</td>
+                <td>14</td>
+                <td>48</td>
+                <td>44</td>
+                <td>4</td>
+                <td>45.6</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Criciúma	</td>
+                <td>51</td>
+                <td>38</td>
+                <td>13</td>
+                <td>12</td>
+                <td>13</td>
+                <td>43</td>
+                <td>43</td>
+                <td>0</td>
+                <td>44.7</td>
+            </tr>
+            <tr class="impar">
+                <td>15</td>
+                <td>São Caetano	</td>
+                <td>51</td>
+                <td>38</td>
+                <td>12</td>
+                <td>15</td>
+                <td>11</td>
+                <td>57</td>
+                <td>51</td>
+                <td>6</td>
+                <td>44.7</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>ASA	</td>
+                <td>48</td>
+                <td>38</td>
+                <td>13</td>
+                <td>9</td>
+                <td>16</td>
+                <td>44</td>
+                <td>54</td>
+                <td>-10</td>
+                <td>42.1</td>
+            </tr>
+            <tr class="impar">
+                <td>17</td>
+                <td>Icasa	</td>
+                <td>47</td>
+                <td>38</td>
+                <td>11</td>
+                <td>14</td>
+                <td>13</td>
+                <td>52</td>
+                <td>55</td>
+                <td>-3</td>
+                <td>41.2</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Vila Nova	</td>
+                <td>32</td>
+                <td>38</td>
+                <td>7</td>
+                <td>11</td>
+                <td>20</td>
+                <td>34</td>
+                <td>53</td>
+                <td>-19</td>
+                <td>28.1</td>
+            </tr>
+            <tr class="impar">
+                <td>19</td>
+                <td>Salgueiro-PE	</td>
+                <td>26</td>
+                <td>38</td>
+                <td>8</td>
+                <td>5</td>
+                <td>25</td>
+                <td>32</td>
+                <td>63</td>
+                <td>-31</td>
+                <td>25.4</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Duque de Caxias	</td>
+                <td>17</td>
+                <td>38</td>
+                <td>2</td>
+                <td>11</td>
+                <td>25</td>
+                <td>32</td>
+                <td>84</td>
+                <td>-52</td>
+                <td>14.9</td>
+			</tr>
+		</table>
+
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="jogosGoiano" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">Goianão 2012</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+    	<ul data-role="listview" data-inset="true">
+        	<li data-role="list-divider">Rodadas Anteriores</li>
+            <li>
+              <table cellspacing="0" cellpadding="8" class="jogos" align="center" width="100%">        	
+                <tr>
+                    <td><h2>38ª</h2></td>
+                    <td><img src="../img/times/goias_45x45.png" width="32"/></td>
+                    <td><h2>GOI</h2></td>
+                    <td><h1>0</h1></td>
+                    <td>x</td>
+                    <td><h1>2</h1></td>
+                    <td><h2>GUA</h2></td>
+                    <td><img src="../img/times/guarani_45x45.png" width="32"/></td>                
+                </tr>
+                <tr>
+                    <td><h2>37ª</h2></td>
+                    <td><img src="../img/times/goias_45x45.png" width="32"/></td>
+                    <td><h2>GOI</h2></td>
+                    <td><h1>0</h1></td>
+                    <td>x</td>
+                    <td><h1>0</h1></td>
+                    <td><h2>ICA</h2></td>
+                    <td><img src="../img/times/icasa_45x45.png" width="32"/></td>                
+                </tr>
+                <tr>
+                    <td><h2>36ª</h2></td>
+                    <td><img src="../img/times/goias_45x45.png" width="32"/></td>
+                    <td><h2>GOI</h2></td>
+                    <td><h1>0</h1></td>
+                    <td>x</td>
+                    <td><h1>4</h1></td>
+                    <td><h2>BRA</h2></td>
+                    <td><img src="../img/times/Bragantino_45x45.png" width="32"/></td>                
+                </tr>
+                <tr>
+                    <td><h2>35ª</h2></td>
+                    <td><img src="../img/times/goias_45x45.png" width="32"/></td>
+                    <td><h2>GOI</h2></td>
+                    <td><h1>1</h1></td>
+                    <td>x</td>
+                    <td><h1>0</h1></td>
+                    <td><h2>SCA</h2></td>
+                    <td><img src="../img/times/sao_caetano_45.png" width="32"/></td>                
+                </tr>
+            </table>
+           </li>
+        </ul>             
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="jogadores" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">JOGADORES</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">	
+        <ul data-role="listview" data-inset="true">
+        	<li data-role="list-divider">Goleiros</li>
+            <li><img src="../img/jogadores/edson.jpg" align="left"/><h3>Edson</h3><p>24/09/85</p></li>
+			<li><img src="../img/jogadores/harlei.jpg" align="left"/><h3>Harlei</h3><p>30/03/72</p></li>
+			<li><img src="../img/jogadores/pedroHenrique.jpg" align="left"/><h3>Pedro Henrique</h3><p>12/10/85</p></li>
+			<li><img src="../img/jogadores/wallace.jpg" align="left"/><h3>Wallace</h3><p>14/04/92</p></li>
+ 		</ul>
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">Zagueiros</li>
+            <li><img src="../img/jogadores/ernando.jpg" align="left"/><h3>Ernando</h3><p>17/04/88</p></li>
+            <li><img src="../img/jogadores/marcao.jpg" align="left"/><h3>Marcão</h3><p>28/03/75</p></li>
+            <li><img src="../img/jogadores/rafaelToloi.jpg" align="left"/><h3>Rafael Toloi</h3><p>10/10/90</p></li>
+            <li><img src="../img/jogadores/valmirLucas.jpg" align="left"/><h3>Valmir Lucas</h3><p>12/01/89</p></li>
+            <li><img src="../img/jogadores/wallinson.jpg" align="left"/><h3>Wallinson</h3><p>16/06/89</p></li>
+        </ul>
+        <ul data-role="listview" data-inset="true">    
+            <li data-role="list-divider">Laterais</li>
+            <li><img src="../img/jogadores/douglas.jpg" align="left"/><h3>Douglas</h3><p>17/04/88</p></li>
+            <li><img src="../img/jogadores/oziel.jpg" align="left"/><h3>Oziel</h3><p>17/04/88</p></li>
+            <li><img src="../img/jogadores/valdirLima.jpg" align="left"/><h3>Valdir Lima</h3><p>17/04/88</p></li>
+            <li><img src="../img/jogadores/andrezinho.jpg" align="left"/><h3>Andrezinho</h3><p>17/04/88</p></li>
+            <li><img src="../img/jogadores/digao.jpg" align="left"/><h3>Digão</h3><p>17/04/88</p></li>
+            <li><img src="../img/jogadores/gerson.jpg" align="left"/><h3>Gérson</h3><p>17/04/88</p></li>           
+        </ul>
+        
+        <ul data-role="listview" data-inset="true">    
+            <li data-role="list-divider">Meias</li>
+            <li><img src="../img/jogadores/diniz.jpg" align="left"/><h3>Diniz</h3><p>27/06/84</p></li>
+            <li><img src="../img/jogadores/elivelton.jpg" align="left"/><h3>Elivélton</h3><p>30/01/93</p></li>
+            <li><img src="../img/jogadores/felipeAmorim.jpg" align="left"/><h3>Felipe Amorim</h3><p>04/01/91</p></li>
+            <li><img src="../img/jogadores/marceloCosta.jpg" align="left"/><h3>Marcelo Costa</h3><p>24/07/80</p></li>
+            <li><img src="../img/jogadores/netinho.jpg" align="left"/><h3>Netinho</h3><p>24/04/84</p></li>
+            <li><img src="../img/jogadores/robert.jpg" align="left"/><h3>Robert</h3><p>09/09/91</p></li>
+       </ul>
+       <ul data-role="listview" data-inset="true">      
+            <li data-role="list-divider">Volantes</li>
+            <li><img src="../img/jogadores/alanBahia.jpg" align="left"/><h3>Alan Bahia</h3><p>14/01/83</p></li>
+            <li><img src="../img/jogadores/amaral.jpg" align="left"/><h3>Amaral</h3><p>07/10/86</p></li>
+            <li><img src="../img/jogadores/carlosAlberto.jpg" align="left"/><h3>Carlos Alberto</h3><p>24/01/78</p></li>
+            <li><img src="../img/jogadores/leandro.jpg" align="left"/><h3>Leandro</h3><p>28/02/91</p></li>
+            <li><img src="../img/jogadores/marcinhoGuerreiro.jpg" align="left"/><h3>Marcinho Guerreiro</h3><p>23/09/80</p></li>
+            <li><img src="../img/jogadores/thiagoMendes.jpg" align="left"/><h3>Thiago Mendes</h3><p>15/03/92</p></li>
+            <li><img src="../img/jogadores/zeAntonio.jpg" align="left"/><h3>Zé Antônio</h3><p>19/03/84</p></li>
+        </ul>
+        <ul data-role="listview" data-inset="true">      
+            <li data-role="list-divider">Atacantes</li>
+            <li><img src="../img/jogadores/brunoAquino.jpg" align="left"/><h3>Bruno Aquino</h3><p>21/06/91</p></li>
+            <li><img src="../img/jogadores/guto.jpg" align="left"/><h3>Guto</h3><p>04/05/88</p></li>
+            <li><img src="../img/jogadores/hugo.jpg" align="left"/><h3>Hugo</h3><p>06/01/86</p></li>
+            <li><img src="../img/jogadores/iarley.jpg" align="left"/><h3>Iarley</h3><p>29/03/74</p></li>
+            <li><img src="../img/jogadores/johnathan.jpg" align="left"/><h3>Johnathan</h3><p>29/03/90</p></li>
+            <li><img src="../img/jogadores/pardalzinho.jpg" align="left"/><h3>Pardalzinho</h3><p>14/05/87</p></li>
+            <li><img src="../img/jogadores/tardelly.jpg" align="left"/><h3>Tardelly</h3><p>19/10/91</p></li>
+            <li><img src="../img/jogadores/thiaguinho.jpg" align="left"/><h3>Thiaguinho</h3><p>01/03/91</p></li>
+            <li><img src="../img/jogadores/wellington.jpg" align="left"/><h3>Wellington</h3><p>11/02/88</p></li>
+            <li><img src="../img/jogadores/wendell.jpg" align="left"/><h3>Wendell</h3><p>07/01/89</p></li>
+        </ul>                 
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+<div data-role="page" id="musa" data-theme="a">
+	<div data-role="header" class="barra-titulo">
+        <h1 class="titulo">Goiás Esporte Clube</h1>
+        <h2 class="subtitulo">MUSA</h2>
+	</div>
+	<div data-role="content" style="text-align:justify">
+    	<h1>Lilian Leite</h1>	
+		<img src="../img/musa.jpg" width="100%"/><br/>
+        <img src="../img/musa-01.jpg" width="100%"/><br/>          
+	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" data-icon="grid">Início</a></li>
+            <li><a href="#campeonatos" data-icon="star">Campeonatos</a></li>
+            <li><a href="#jogadores" data-icon="gear">Jogadores</a></li>
+        </ul>
+    </div>
+</div><!-- #EndLibraryItem --></div>
+
+
+</body>
+</html>

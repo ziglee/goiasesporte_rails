@@ -1,0 +1,30 @@
+/* CSS Document */
+
+#inicio{ background:url(../img/home.jpg); }
+.barra-titulo{ background-image:url(../img/header.jpg); background-repeat:no-repeat; }
+.titulo{ color:#ccc; text-shadow: none; margin:5px 0px 0px 50px !important;  }
+.subtitulo{ color:#FFF; text-shadow: none; margin:15px 0px 10px 30px !important; display: inline; }
+.verde{ color: #449111;}
+
+.ui-btn-active {
+    background: -moz-linear-gradient(center top , #449111, #132705) repeat scroll 0 0 #4596CE;
+    border: 1px solid #132705;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    outline: medium none;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #145072;
+}
+
+.ui-body-a{ background:url(../img/texture.png); }
+.t1{ color: #FFF; text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #000 /*{a-body-shadow-color}*/}
+
+.classificacao{ background:#FFF; font: normal 10px Tahoma, Geneva, sans-serif; color:#000; text-shadow:none; }
+.classificacao td{ border-bottom:1px dotted #CCC; border-right:1px dotted #CCC; padding: 2px;}
+.classificacao tr.impar td{ background:#ddd; }
+.jogos h2{ color:#999; }
+.jogos h1{ font-family:"Times New Roman", Times, serif; }
+.jogos td{ border-bottom:1px dotted #CCC; }
+
