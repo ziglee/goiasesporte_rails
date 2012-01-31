@@ -18,7 +18,7 @@
     text-shadow: 0 -1px 1px #145072;
 }
 
-.ui-body-a{ background:url(../img/texture.png); }
+.ui-body-a{ background:url(../img/texture.jpg); }
 .t1{ color: #FFF; text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #000 /*{a-body-shadow-color}*/}
 
 .classificacao{ background:#FFF; font: normal 10px Tahoma, Geneva, sans-serif; color:#000; text-shadow:none; }
