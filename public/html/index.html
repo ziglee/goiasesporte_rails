@@ -7,13 +7,26 @@
 <link href="../css/custom.css" rel="stylesheet"/>
 <link href="http://code.jquery.com/mobile/1.0/jquery.mobile.structure-1.0.min.css" rel="stylesheet"/>
 <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+
 <script src="../js/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="../js/jquery.mobile-1.0rc1.min.js" type="text/javascript"></script>
+<script src="../js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../js/jquery.scrollTo.js" type="text/javascript"></script>
+
 <style type="text/css">
 	.botao{ -webkit-border-radius: 0.5em ;border-radius: 0.5em; font-size:24px; }
 	.botao .ui-btn-corner-all{ -webkit-border-radius: 0.5em ;border-radius: 0.5em; }
 	.botao .ui-btn-text{ margin-right: 10px}
 </style>
+<script>
+	$(document).ready(function() {
+		$("img.lazy").lazyload();
+		
+		$( '#categoriasMidia, #estrutura, #musa, #jogadores' ).live( 'pageshow',function(event, ui){		  	
+			$(document).scrollTo(10);
+		});
+	});
+</script>
 </head> 
 <body> 
 
@@ -163,11 +176,11 @@ Em seu estado, o esmeraldino é supremacia: Com 22 títulos goianos, o clube alv
 	<div data-role="content" style="text-align:justify">	
 		O Estádio de Hailé Pinheiro, também conhecido como Estádio da Serrinha, foi construído em 1995, é um estádio de futebol situado em 		        Goiânia, Brasil. É propriedade do Goiás Esporte Clube e possui uma capacidade para 6.403 pessoas, segundo o CNEF(Cadastro Nacional de        Estádios de Futebol) editado em 15/09/2009 pela CBF.
         <br/><br/>
-        <img src="../img/estrutura-03.jpg" width="100%"/>
+        <img class="lazy" src="../img/transparent.gif" data-original="../img/estrutura-03.jpg" width="100%"/>
         <br/><br/>
         O Complexo de Serrinha, que inclui estádio homônimo, foi adquirido pelo Goiás Esporte Clube na década de 1960. Naquela altura, o terreno        era de propriedade municipal, onde anteriormente funcionava a Fazenda Macambira. Neste espaço foi montado o prédio administrativo do Goiás, campos de futebol, concentração e o Ginásio Luiz Torres de Abreu. Em 1995, foi construído o Estádio Hailé Pinheiro. Todo o        complexo foi modernizado em 2003 na direção de Raimundo Queiroz.
         <br/><br/>
-        <img src="../img/estrutura-02.jpg" width="100%"/>
+        <img class="lazy" src="../img/transparent.gif" data-original="../img/estrutura-02.jpg" width="100%"/>
         <br/><br/>
         <h2>O complexo</h2>
         <ul data-role="listview" data-inset="true"> 
@@ -263,8 +276,8 @@ Em seu estado, o esmeraldino é supremacia: Com 22 títulos goianos, o clube alv
 	</div>
 	<div data-role="content" style="text-align:justify">	
 		<h1>Fotos</h1>
-        <img src="../img/base-01.jpg" width="100%"/>
-        <img src="../img/base-02.jpg" width="100%"/>
+        <img class="lazy" src="../img/transparent.gif" data-original="../img/base-01.jpg" width="100%"/>
+        <img class="lazy" src="../img/transparent.gif" data-original="../img/base-02.jpg" width="100%"/>
         <ul data-role="listview" data-inset="true">
          	<li><a href="#">mais fotos</a></li>
         </ul>
@@ -397,14 +410,14 @@ Em seu estado, o esmeraldino é supremacia: Com 22 títulos goianos, o clube alv
             <li>
             	<b>Próximos confrontos:</b><br/><br/><br/>
                 <p>
-                    <img src="../img/times/goiano/itumbiara.png" width="32" align="left" hspace="10"/>
+                    <img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/itumbiara.png" width="32" align="left" hspace="10"/>
                     <b>Itumbiara</b><br/>
                     <span class="verde">Qua 01/02 às 22h00 - Juscelino Kubitschek</span><br/>
                     4ª rodada
                 </p>
                 <br/>
                 <p>
-                    <img src="../img/times/goiano/atletico.png" width="32" align="left" hspace="10"/>
+                    <img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/atletico.png" width="32" align="left" hspace="10"/>
                     <b>Atlético</b><br/>
                     <span class="verde">Dom 05/02 às 17h00 - Serra Dourada</span><br/>
                     5ª rodada
@@ -599,33 +612,33 @@ Em seu estado, o esmeraldino é supremacia: Com 22 títulos goianos, o clube alv
               <table cellspacing="0" cellpadding="5" class="jogos" align="center" width="100%">
                 <tr>
                     <td><h2>3ª</h2></td>
-                    <td><img src="../img/times/goiano/goias.png" width="32"/></td>
+                    <td><img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/goias.png" width="32"/></td>
                     <td><h2>GOI</h2></td>
                     <td><h1>3</h1></td>
                     <td>x</td>
                     <td><h1>1</h1></td>
                     <td><h2>VIL</h2></td>
-                    <td><img src="../img/times/goiano/vilanova.png" width="32"/></td>                
+                    <td><img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/vilanova.png" width="32"/></td>                
                 </tr>
                 <tr>
                     <td><h2>2ª</h2></td>
-                    <td><img src="../img/times/goiano/goias.png" width="32"/></td>
+                    <td><img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/goias.png" width="32"/></td>
                     <td><h2>GOI</h2></td>
                     <td><h1>4</h1></td>
                     <td>x</td>
                     <td><h1>2</h1></td>
                     <td><h2>MOR</h2></td>
-                    <td><img src="../img/times/goiano/morrinhos.png" width="32"/></td>                
+                    <td><img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/morrinhos.png" width="32"/></td>                
                 </tr>           
                 <tr>
                     <td><h2>1ª</h2></td>
-                    <td><img src="../img/times/goiano/goias.png" width="32"/></td>
+                    <td><img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/goias.png" width="32"/></td>
                     <td><h2>GOI</h2></td>
                     <td><h1>5</h1></td>
                     <td>x</td>
                     <td><h1>0</h1></td>
                     <td><h2>APA</h2></td>
-                    <td><img src="../img/times/goiano/aparecidense.png" width="32"/></td>                
+                    <td><img class="lazy" src="../img/transparent.gif" data-original="../img/times/goiano/aparecidense.png" width="32"/></td>                
                 </tr>
             </table>
            </li>
@@ -650,56 +663,56 @@ Em seu estado, o esmeraldino é supremacia: Com 22 títulos goianos, o clube alv
 	<div data-role="content" style="text-align:justify">	
         <ul data-role="listview" data-inset="true">
         	<li data-role="list-divider">Goleiros</li>
-            <li><img src="../img/jogadores/edson.jpg" align="left"/><h3>Edson</h3><p>24/09/85</p></li>
-			<li><img src="../img/jogadores/harlei.jpg" align="left"/><h3>Harlei</h3><p>30/03/72</p></li>
-			<li><img src="../img/jogadores/pedroHenrique.jpg" align="left"/><h3>Pedro Henrique</h3><p>12/10/85</p></li>
-			<li><img src="../img/jogadores/wallace.jpg" align="left"/><h3>Wallace</h3><p>14/04/92</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/edson.jpg" align="left"/><h3>Edson</h3><p>24/09/85</p></li>
+			<li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/harlei.jpg" align="left"/><h3>Harlei</h3><p>30/03/72</p></li>
+			<li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/pedroHenrique.jpg" align="left"/><h3>Pedro Henrique</h3><p>12/10/85</p></li>
+			<li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/wallace.jpg" align="left"/><h3>Wallace</h3><p>14/04/92</p></li>
  		</ul>
         <ul data-role="listview" data-inset="true">
             <li data-role="list-divider">Zagueiros</li>
-            <li><img src="../img/jogadores/ernando.jpg" align="left"/><h3>Ernando</h3><p>17/04/88</p></li>
-            <li><img src="../img/jogadores/henrique.jpg" align="left"/><h3>Henrique</h3><p>08/02/91</p></li>
-            <li><img src="../img/jogadores/rafaelToloi.jpg" align="left"/><h3>Rafael Toloi</h3><p>10/10/90</p></li>
-            <li><img src="../img/jogadores/valmirLucas.jpg" align="left"/><h3>Valmir Lucas</h3><p>12/01/89</p></li>
-            <li><img src="../img/jogadores/wallinson.jpg" align="left"/><h3>Wallinson</h3><p>16/06/89</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/ernando.jpg" align="left"/><h3>Ernando</h3><p>17/04/88</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/henrique.jpg" align="left"/><h3>Henrique</h3><p>08/02/91</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/rafaelToloi.jpg" align="left"/><h3>Rafael Toloi</h3><p>10/10/90</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/valmirLucas.jpg" align="left"/><h3>Valmir Lucas</h3><p>12/01/89</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/wallinson.jpg" align="left"/><h3>Wallinson</h3><p>16/06/89</p></li>
         </ul>
         <ul data-role="listview" data-inset="true">    
             <li data-role="list-divider">Laterais</li>
-            <li><img src="../img/jogadores/douglas.jpg" align="left"/><h3>Douglas</h3><p>17/04/88</p></li>
-            <li><img src="../img/jogadores/hugoValente.jpg" align="left"/><h3>Hugo Valente</h3><p>12/06/92</p></li>
-            <li><img src="../img/jogadores/peter.jpg" align="left"/><h3>Peter</h3><p>17/05/84</p></li>
-            <li><img src="../img/jogadores/andrezinho.jpg" align="left"/><h3>Andrezinho</h3><p>17/04/88</p></li>
-            <li><img src="../img/jogadores/vitor.jpg" align="left"/><h3>Vitor</h3><p>29/07/82</p></li>
-            <li><img src="../img/jogadores/egidio.jpg" align="left"/><h3>Egídio</h3><p>16/06/86</p></li>           
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/douglas.jpg" align="left"/><h3>Douglas</h3><p>17/04/88</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/hugoValente.jpg" align="left"/><h3>Hugo Valente</h3><p>12/06/92</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/peter.jpg" align="left"/><h3>Peter</h3><p>17/05/84</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/andrezinho.jpg" align="left"/><h3>Andrezinho</h3><p>17/04/88</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/vitor.jpg" align="left"/><h3>Vitor</h3><p>29/07/82</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/egidio.jpg" align="left"/><h3>Egídio</h3><p>16/06/86</p></li>           
         </ul>
         
         <ul data-role="listview" data-inset="true">    
             <li data-role="list-divider">Meias</li>
-            <li><img src="../img/jogadores/clayton.jpg" align="left"/><h3>Clayton</h3><p>15/01/92</p></li>
-			<li><img src="../img/jogadores/david.jpg" align="left"/><h3>David</h3><p>29/05/82</p></li>
-            <li><img src="../img/jogadores/elivelton.jpg" align="left"/><h3>Elivélton</h3><p>30/01/93</p></li>
-            <li><img src="../img/jogadores/felipeAmorim.jpg" align="left"/><h3>Felipe Amorim</h3><p>04/01/91</p></li>
-            <li><img src="../img/jogadores/marinho.jpg" align="left"/><h3>Marinho</h3><p>29/05/90</p></li>
-            <li><img src="../img/jogadores/netinho.jpg" align="left"/><h3>Netinho</h3><p>24/04/84</p></li>
-            <li><img src="../img/jogadores/ramon.jpg" align="left"/><h3>Ramon</h3><p>07/04/83</p></li>
-			<li><img src="../img/jogadores/ricardoGoulart.jpg" align="left"/><h3>Ricardo Goulart</h3><p>05/06/91</p></li>
-			<li><img src="../img/jogadores/thiagoHumberto.jpg" align="left"/><h3>Thiago Humberto</h3><p>06/07/85</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/clayton.jpg" align="left"/><h3>Clayton</h3><p>15/01/92</p></li>
+			<li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/david.jpg" align="left"/><h3>David</h3><p>29/05/82</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/elivelton.jpg" align="left"/><h3>Elivélton</h3><p>30/01/93</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/felipeAmorim.jpg" align="left"/><h3>Felipe Amorim</h3><p>04/01/91</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/marinho.jpg" align="left"/><h3>Marinho</h3><p>29/05/90</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/netinho.jpg" align="left"/><h3>Netinho</h3><p>24/04/84</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/ramon.jpg" align="left"/><h3>Ramon</h3><p>07/04/83</p></li>
+			<li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/ricardoGoulart.jpg" align="left"/><h3>Ricardo Goulart</h3><p>05/06/91</p></li>
+			<li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/thiagoHumberto.jpg" align="left"/><h3>Thiago Humberto</h3><p>06/07/85</p></li>
        </ul>
        <ul data-role="listview" data-inset="true">      
             <li data-role="list-divider">Volantes</li>
-            <li><img src="../img/jogadores/alanBahia.jpg" align="left"/><h3>Alan Bahia</h3><p>14/01/83</p></li>
-            <li><img src="../img/jogadores/amaral.jpg" align="left"/><h3>Amaral</h3><p>07/10/86</p></li>
-            <li><img src="../img/jogadores/juliano.jpg" align="left"/><h3>Juliano</h3><p>06/04/90</p></li>
-            <li><img src="../img/jogadores/leandro.jpg" align="left"/><h3>Leandro</h3><p>28/02/91</p></li>
-            <li><img src="../img/jogadores/marcosPaulo.jpg" align="left"/><h3>Marcos Paulo</h3><p>04/02/90</p></li>
-            <li><img src="../img/jogadores/thiagoMendes.jpg" align="left"/><h3>Thiago Mendes</h3><p>15/03/92</p></li>            
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/alanBahia.jpg" align="left"/><h3>Alan Bahia</h3><p>14/01/83</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/amaral.jpg" align="left"/><h3>Amaral</h3><p>07/10/86</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/juliano.jpg" align="left"/><h3>Juliano</h3><p>06/04/90</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/leandro.jpg" align="left"/><h3>Leandro</h3><p>28/02/91</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/marcosPaulo.jpg" align="left"/><h3>Marcos Paulo</h3><p>04/02/90</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/thiagoMendes.jpg" align="left"/><h3>Thiago Mendes</h3><p>15/03/92</p></li>            
         </ul>
         <ul data-role="listview" data-inset="true">      
             <li data-role="list-divider">Atacantes</li>
-            <li><img src="../img/jogadores/assuerio.jpg" align="left"/><h3>Assuério</h3><p>24/02/93</p></li>
-			<li><img src="../img/jogadores/brunoAquino.jpg" align="left"/><h3>Bruno Aquino</h3><p>21/06/91</p></li>                        
-            <li><img src="../img/jogadores/iarley.jpg" align="left"/><h3>Iarley</h3><p>29/03/74</p></li>            
-            <li><img src="../img/jogadores/reis.jpg" align="left"/><h3>Reis</h3><p>14/07/88</p></li>
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/assuerio.jpg" align="left"/><h3>Assuério</h3><p>24/02/93</p></li>
+			<li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/brunoAquino.jpg" align="left"/><h3>Bruno Aquino</h3><p>21/06/91</p></li>                        
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/iarley.jpg" align="left"/><h3>Iarley</h3><p>29/03/74</p></li>            
+            <li><img class="lazy" src="../img/transparent.gif" data-original="../img/jogadores/reis.jpg" align="left"/><h3>Reis</h3><p>14/07/88</p></li>
         </ul>                 
 	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
 
@@ -721,72 +734,72 @@ Em seu estado, o esmeraldino é supremacia: Com 22 títulos goianos, o clube alv
 	<div data-role="content" style="text-align:justify">
     	<h1>Hélika Rios</h1>
 		<center>
-			<img src="../img/musa/00001.jpg" width="100%"/><br/>
-			<img src="../img/musa/000010.jpg" width="100%"/><br/>
-			<img src="../img/musa/000011.jpg" width="100%"/><br/>
-			<img src="../img/musa/000012.jpg" width="100%"/><br/>
-			<img src="../img/musa/000013.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00001.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000010.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000011.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000012.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000013.jpg" width="100%"/><br/>
             <!--
-			<img src="../img/musa/000015.jpg" width="100%"/><br/>
-			<img src="../img/musa/000016.jpg" width="100%"/><br/>
-			<img src="../img/musa/000017.jpg" width="100%"/><br/>
-			<img src="../img/musa/000018.jpg" width="100%"/><br/>
-			<img src="../img/musa/000019.jpg" width="100%"/><br/>
-			<img src="../img/musa/00002.jpg" width="100%"/><br/>
-			<img src="../img/musa/000020.jpg" width="100%"/><br/>
-			<img src="../img/musa/000021.jpg" width="100%"/><br/>
-			<img src="../img/musa/000022.jpg" width="100%"/><br/>
-			<img src="../img/musa/000023.jpg" width="100%"/><br/>
-			<img src="../img/musa/000024.jpg" width="100%"/><br/>
-			<img src="../img/musa/000025.jpg" width="100%"/><br/>
-			<img src="../img/musa/000026.jpg" width="100%"/><br/>
-			<img src="../img/musa/000027.jpg" width="100%"/><br/>
-			<img src="../img/musa/000028.jpg" width="100%"/><br/>
-			<img src="../img/musa/000029.jpg" width="100%"/><br/>
-			<img src="../img/musa/00003.jpg" width="100%"/><br/>
-			<img src="../img/musa/000030.jpg" width="100%"/><br/>
-			<img src="../img/musa/000037.jpg" width="100%"/><br/>
-			<img src="../img/musa/000038.jpg" width="100%"/><br/>
-			<img src="../img/musa/000039.jpg" width="100%"/><br/>
-			<img src="../img/musa/00004.jpg" width="100%"/><br/>
-			<img src="../img/musa/000041.jpg" width="100%"/><br/>
-			<img src="../img/musa/000042.jpg" width="100%"/><br/>
-			<img src="../img/musa/000043.jpg" width="100%"/><br/>
-			<img src="../img/musa/000044.jpg" width="100%"/><br/>
-			<img src="../img/musa/000045.jpg" width="100%"/><br/>
-			<img src="../img/musa/000046.jpg" width="100%"/><br/>
-			<img src="../img/musa/000048.jpg" width="100%"/><br/>
-			<img src="../img/musa/000049.jpg" width="100%"/><br/>
-			<img src="../img/musa/00005.jpg" width="100%"/><br/>
-			<img src="../img/musa/000051.jpg" width="100%"/><br/>
-			<img src="../img/musa/000052.jpg" width="100%"/><br/>
-			<img src="../img/musa/000053.jpg" width="100%"/><br/>
-			<img src="../img/musa/000054.jpg" width="100%"/><br/>
-			<img src="../img/musa/000055.jpg" width="100%"/><br/>
-			<img src="../img/musa/000056.jpg" width="100%"/><br/>
-			<img src="../img/musa/000057.jpg" width="100%"/><br/>
-			<img src="../img/musa/000058.jpg" width="100%"/><br/>
-			<img src="../img/musa/000059.jpg" width="100%"/><br/>
-			<img src="../img/musa/00006.jpg" width="100%"/><br/>
-			<img src="../img/musa/000060.jpg" width="100%"/><br/>
-			<img src="../img/musa/000061.jpg" width="100%"/><br/>
-			<img src="../img/musa/000062.jpg" width="100%"/><br/>
-			<img src="../img/musa/000065.jpg" width="100%"/><br/>
-			<img src="../img/musa/000066.jpg" width="100%"/><br/>
-			<img src="../img/musa/000067.jpg" width="100%"/><br/>
-			<img src="../img/musa/000068.jpg" width="100%"/><br/>
-			<img src="../img/musa/000069.jpg" width="100%"/><br/>
-			<img src="../img/musa/00007.jpg" width="100%"/><br/>
-			<img src="../img/musa/000070.jpg" width="100%"/><br/>
-			<img src="../img/musa/000071.jpg" width="100%"/><br/>
-			<img src="../img/musa/000072.jpg" width="100%"/><br/>
-			<img src="../img/musa/000073.jpg" width="100%"/><br/>
-			<img src="../img/musa/000074.jpg" width="100%"/><br/>
-			<img src="../img/musa/000075.jpg" width="100%"/><br/>
-			<img src="../img/musa/000076.jpg" width="100%"/><br/>
-			<img src="../img/musa/000077.jpg" width="100%"/><br/>
-			<img src="../img/musa/00008.jpg" width="100%"/><br/>
-			<img src="../img/musa/00009.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000015.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000016.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000017.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000018.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000019.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00002.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000020.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000021.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000022.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000023.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000024.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000025.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000026.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000027.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000028.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000029.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00003.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000030.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000037.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000038.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000039.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00004.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000041.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000042.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000043.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000044.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000045.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000046.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000048.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000049.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00005.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000051.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000052.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000053.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000054.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000055.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000056.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000057.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000058.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000059.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00006.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000060.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000061.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000062.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000065.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000066.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000067.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000068.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000069.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00007.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000070.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000071.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000072.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000073.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000074.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000075.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000076.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/000077.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00008.jpg" width="100%"/><br/>
+			<img class="lazy" src="../img/transparent.gif" data-original="../img/musa/00009.jpg" width="100%"/><br/>
             -->
 		</center>
 	</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
